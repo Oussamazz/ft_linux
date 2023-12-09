@@ -93,5 +93,31 @@ Welcome to **ft_linux**! In this project, the goal is to create a Linux distribu
 
 ### X Server and Window Managers
 
-- Earn extra points for installing an X Server and window managers/desktop environments (e.g., GNOME, LXDE, KDE, i3, dwm).
+- Earn extra points for installing an X Server and window managers/desktop environments (e.g., GNOME, LXDE, KDE, i3, dwm)
+- ## Bonus Part
 
+### System Stability Check
+
+Ensure the mandatory part is perfect before proceeding to the bonus part.
+
+### System Customization
+
+Install additional software, GUI, or any preferred components.
+
+### X Server and Window Managers/Desktop Environments
+
+Earn extra points for installing an X Server and window managers/desktop environments. Choose one or more from the options below:
+
+- **X Server:**
+  - Install an X Server to provide the graphical foundation for your desktop environment.
+  
+  **Window Managers/Desktop Environments:**
+  - Choose and install one or more of the following:
+    - GNOME
+    - LXDE
+    - KDE
+    - i3
+    - dwm
+    - [Add any other window manager or desktop environment you prefer]
+
+Ensure that the X Server and your chosen window manager/desktop environment are properly configured and functional.
