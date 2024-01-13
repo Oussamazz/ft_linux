@@ -1,5 +1,7 @@
 # ft_linux - How to Train Your Kernel
 
+![Wallpaper](wallpaper.jpg)
+
 ## Summary
 
 This project involves building a basic but functional Linux distribution as the foundation for future kernel projects. The distribution will include a custom-built Linux kernel, specific binaries, a compliant filesystem hierarchy, and internet connectivity.
