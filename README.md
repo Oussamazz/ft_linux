@@ -123,3 +123,20 @@ Earn extra points for installing an X Server and window managers/desktop environ
     - [Add any other window manager or desktop environment you prefer]
 
 Ensure that the X Server and your chosen window manager/desktop environment are properly configured and functional.
+
+EOF
+
+Task:
+
+## linux version:
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
+cd linux
+git checkout v4.0 (or higher)
+
+## installing specific Binaries:
+sudo apt update
+sudo apt install <package-name>
+
+## Implementing a filesystem hierarchy in Linux 
+mkdir -p /{bin,boot,dev,etc,home,lib,media,mnt,opt,proc,root,run,sbin,srv,sys,tmp,usr,var}
+chmod 755 /{bin,boot,dev,etc,home,lib,media,mnt,opt,proc,root,run,sbin,srv,sys,tmp,usr,var}
