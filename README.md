@@ -126,7 +126,7 @@ Ensure that the X Server and your chosen window manager/desktop environment are 
 
 EOF
 
-#Tasks:
+# Tasks:
 
 ## linux version:
 `git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git;
