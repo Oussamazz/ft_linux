@@ -126,17 +126,41 @@ Ensure that the X Server and your chosen window manager/desktop environment are 
 
 EOF
 
-Task:
+#Tasks:
 
 ## linux version:
-git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
-cd linux
-git checkout v4.0 (or higher)
+`git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git;
+cd linux;
+git checkout v4.0 (or higher)`
 
 ## installing specific Binaries:
-sudo apt update
-sudo apt install <package-name>
+`sudo apt update;
+sudo apt install <package-name>`
 
 ## Implementing a filesystem hierarchy in Linux 
-mkdir -p /{bin,boot,dev,etc,home,lib,media,mnt,opt,proc,root,run,sbin,srv,sys,tmp,usr,var}
-chmod 755 /{bin,boot,dev,etc,home,lib,media,mnt,opt,proc,root,run,sbin,srv,sys,tmp,usr,var}
+`mkdir -p /{bin,boot,dev,etc,home,lib,media,mnt,opt,proc,root,run,sbin,srv,sys,tmp,usr,var}
+chmod 755 /{bin,boot,dev,etc,home,lib,media,mnt,opt,proc,root,run,sbin,srv,sys,tmp,usr,var}`
+
+## Configure your network settings in a virtual machine
+
+Set the Network Adapter: In your virtual machine settings, go to the "Network" tab. Here, you can set the network adapter to either NAT (Network Address Translation) or Bridged Adapter. NAT allows your virtual machine to share the host's IP address, while Bridged Adapter makes the virtual machine appear as another device on the same network as the host.
+Configure the Network Interface: Once the network adapter is set, you need to configure the network interface within your Linux distribution. This usually involves editing the network configuration files located in /etc/network/interfaces or /etc/netplan/ (depending on your distribution).
+Here's an example of how you might set up a static IP address using Netplan (for newer versions of Ubuntu):
+
+
+
+network:
+ version: 2
+ renderer: networkd
+ ethernets:
+   enp0s3:
+     dhcp4: no
+     addresses: [192.168.1.10/24]
+     gateway4: 192.168.1.1
+     nameservers:
+       addresses: [8.8.8.8, 8.8.4.4]
+
+EOF
+`
+sudo systemctl restart networking
+`
