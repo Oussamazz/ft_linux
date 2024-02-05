@@ -16,15 +16,14 @@ This project involves building a basic but functional Linux distribution as the 
 
 ## Introduction
 
-Welcome to **ft_linux**! In this project, the goal is to create a Linux distribution that serves as the base for kernel projects. The distribution should be a functional environment where kernel code is executed.
+Welcome to **ft_linux**!! In this project, the goal is to create a Linux distribution that serves as the base for kernel projects. The distribution should be a functional environment where kernel code is executed.
 
 ## Goals
 
-- Build a Linux Kernel.
-- Install specific binaries (refer to the [Packages to Install](#mandatory-part) section).
-- Implement a filesystem hierarchy compliant with standards.
-- Connect to the Internet.
-
+- Build a Linux Kernel
+- Install specific binaries (refer to the [Packages to Install](#mandatory-part) section)
+- Implement a filesystem hierarchy compliant with standards
+- Connect to the Internet
 ## General Instructions
 
 ### Virtual Machine
@@ -63,13 +62,13 @@ Welcome to **ft_linux**! In this project, the goal is to create a Linux distribu
 
 - Choose between a 32-bit or 64-bit system.
 
-### Management and Configuration Software
+### Management and Configuration Software 
 
-- Use SysV or SystemD for central management and configuration.
-
+- Use SysV or SystemD for central management and configuration
 ### Bootloader
 
-- Ensure your distro boots with a bootloader (LILO or GRUB).
+
+- Ensure your distro boots with a bootloader (LILO or GRUB)
 
 ### Kernel Binary Naming
 
